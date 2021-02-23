@@ -1,0 +1,17 @@
+@startuml Sequencia
+
+participant "User" as user
+participant "Controller" as controller
+participant "Handler" as handler
+participant "Validation Services" as services
+
+user -> controller: Requisição de validação de senha
+controller -> handler: Solicita a validaçao da senha
+activate handler
+handler -> services: Solicita a validação para cada service de validação cadastrado
+services --> handler
+handler --> controller
+deactivate handler
+controller --> user
+
+@enduml
