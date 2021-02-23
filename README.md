@@ -4,7 +4,7 @@
 
 ### Fluxos:
 
-- [Sequencia](docs/sequencia.png)
+- [Sequencia](docs/Sequencia.png)
 
 ### Executando a aplicação:
 
